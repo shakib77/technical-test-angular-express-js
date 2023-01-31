@@ -2,15 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { PiCreateComponent } from './pi-create/pi-create.component';
+import { PiListPageComponent } from './pi-list-page/pi-list-page.component';
+import {AppComponent} from "./home/app.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PiCreateComponent,
+    PiListPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
