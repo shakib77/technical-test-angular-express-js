@@ -29,7 +29,7 @@ export class PiCreateComponent {
 
   }
 
-  submitForm = ($event: any, value: any) => {
+  submitForm = ($event: any, value: { concept: any; code: any; country: string | Blob; city: string | Blob; skill: string | Blob; dob: string | Blob; resume: string | Blob; }) => {
     console.log('value->', value);
     $event.preventDefault();
     for (const key in this.validateForm.controls) {
@@ -47,4 +47,17 @@ export class PiCreateComponent {
     formData.append('dob', value.dob);
     formData.append('resume', value.resume);
   };
+
+  resetForm($event: MouseEvent) {
+    $event.preventDefault();
+    this.validateForm.reset();
+    for (const key in this.validateForm.controls) {
+      this.validateForm.controls[key].markAsPristine();
+    }
+  }
+
+  // Event method for setting up form in validation
+  getFormControl(name: string | number) {
+    return this.validateForm.controls[name];
+  }
 }

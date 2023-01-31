@@ -6,7 +6,7 @@ import {PiListPageComponent} from "./pi-list-page/pi-list-page.component";
 const routes: Routes = [
   {path: 'create', component: PiCreateComponent},
   {path: 'list', component: PiListPageComponent},
-  {path: '', redirectTo: '/list', pathMatch: 'full'}
+  {path: '', redirectTo: '/create', pathMatch: 'full'}
 ];
 
 @NgModule({

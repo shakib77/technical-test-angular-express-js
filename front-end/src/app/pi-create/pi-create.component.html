@@ -1,1 +1,20 @@
-<div>fd</div>
+<form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm($event,validateForm.value)">
+  <div class="row">
+    <div class="col-md-6">
+      <div nz-row class="form-row">
+        <div nz-col [nzSpan]="7">
+          <label> Name </label>
+        </div>
+        <div nz-col [nzSpan]="12">
+          <input nz-input formControlName="name" [placeholder]="'Enter name'">
+          <div *ngIf="getFormControl('name').dirty && getFormControl('name').hasError('required')">
+            <span class="validation-error">Name is required! </span>
+          </div>
+        </div>
+      </div>
+      <!--name-->
+    </div>
+  </div>
+</form>
+
+
