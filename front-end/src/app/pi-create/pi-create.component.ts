@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {FormArray, FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {NzNotificationService} from "ng-zorro-antd/notification";
 
 @Component({
@@ -11,18 +11,31 @@ export class PiCreateComponent {
   validateForm: FormGroup;
   isSubmit: boolean = false;
 
+  countries: any[] = [];
+  cities: any[] = [];
+
+  skills: any[] = [
+    {label: 'Apple', value: 'Apple', checked: true},
+    {label: 'Pear', value: 'Pear'},
+    {label: 'Orange', value: 'Orange'}
+  ]
+
+
   constructor(
-    private _notification: NzNotificationService,
-    private fb: FormBuilder,) {
+    // private _notification: NzNotificationService,
+    private fb: FormBuilder
+  ) {
     this.validateForm = this.fb.group({
       name: ['', [Validators.required]],
       country: ['', [Validators.required]],
       city: ['', [Validators.required]],
-      skill: ['', [Validators.required]],
+      skills: this.fb.array([]),
       dob: ['', [Validators.required]],
       resume: [null, []],
+      // checkArray: this.fb.array([])
 
     });
+
   }
 
   ngOnInit() {
@@ -43,7 +56,7 @@ export class PiCreateComponent {
     formData.append('name', name);
     formData.append('country', value.country);
     formData.append('city', value.city);
-    formData.append('skill', value.skill);
+    formData.append('skills', value.skill);
     formData.append('dob', value.dob);
     formData.append('resume', value.resume);
   };
@@ -60,4 +73,48 @@ export class PiCreateComponent {
   getFormControl(name: string | number) {
     return this.validateForm.controls[name];
   }
+
+  onCountryChange($event: string) {
+    const query = encodeURI($event);
+    /*if (query !== 'null') {
+      this.categoryProductService
+        .getSubcategoryByCategoryId(query)
+        .subscribe(result => {
+          this.categorySearchOptions = result;
+        });
+    } else {
+      this.subcategorySearchOptions = {};
+    }*/
+  }
+
+  cityChange($event: string) {
+    const query = encodeURI($event);
+    /*if (query !== 'null') {
+      this.categoryProductService
+        .getSubcategoryByCategoryId(query)
+        .subscribe(result => {
+          this.subcategorySearchOptions = result;
+        });
+    } else {
+      this.subcategorySearchOptions = {};
+    }*/
+  }
+
+  onCheckboxChange(e: any) {
+    console.log('e=>', e?.target?.value);
+    const checkArray: FormArray = this.validateForm.get('skills') as FormArray;
+    if (e.target && e.target.checked) {
+      checkArray.push(new FormControl(e.target.value));
+    } else {
+      let i: number = 0;
+      checkArray.controls.forEach((item: any) => {
+        if (item.value == e.target.value) {
+          checkArray.removeAt(i);
+          return;
+        }
+        i++;
+      });
+    }
+  }
+
 }
