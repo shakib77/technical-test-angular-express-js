@@ -1,9 +1,6 @@
 const fetch = require('node-fetch');
-const {devEnv, bKash, dhakaZilaId} = require('../config/softbd');
 const AbortController = require('node-abort-controller');
-const _ = require('lodash');
 const fs = require('fs');
-const {s3Config} = require('../config/softbd');
 
 const asyncForEach = async (array, callback) => {
   if (array && Array.isArray(array) && array.length > 0) {
@@ -15,14 +12,6 @@ const asyncForEach = async (array, callback) => {
 };
 exports.asyncForEach = asyncForEach;
 
-
-exports.bKashModeConfigKey = function () {
-  let bKashModeConfigKey = 'production';
-  if (bKash.isSandboxMode) {
-    bKashModeConfigKey = 'sandbox';
-  }
-  return bKashModeConfigKey;
-};
 
 exports.fetchWithTimeout = async function (resource, options) {
   const {timeout = 30000} = options;
@@ -67,47 +56,14 @@ exports.escapeExcel = function (str) {
   }
   return str.replace(/[&]/g, 'and').replace(/['"]/g, '').replace('-', ' ').replace(/\s+/g, ' ');
 };
-
-/*exports.calcCartTotal = function (cart, cartItems) {
-  let grandOrderTotal = 0;
-  let totalQty = 0;
-  cartItems.forEach((cartItem) => {
-    if (cartItem.product_quantity > 0) {
-      //  console.log('ttttt', cartItem);
-      grandOrderTotal += cartItem.product_total_price;
-      totalQty += cartItem.product_quantity;
-    }
-  });
-  return {
-    grandOrderTotal,
-    totalQty
-  };
-};*/
-
-/*exports.uploadImgAsync = (param, option = {}) => {
-  return new Promise(((resolve, reject) => {
-    param.upload(option, (err, data) => {
-      if (err !== null) {
-        return reject(err);
-      }
-      resolve(data);
-    });
-  }));
-};*/
 const imageUploadConfig = function () {
-  //todo: for enable s3 file server make devEnv = false, now it is true
-  if (devEnv) {
-    return {
-      maxBytes: 52428800,
-      /*maxBytes: 10000000,*/
-      /*maxBytes: 50*1024*1024,*/
-      dirname: sails.config.appPath + '/assets/images/',
-    };
-  }
   return {
-    adapter: require('skipper-s3'),
-    ...s3Config
+    maxBytes: 52428800,
+    /*maxBytes: 10000000,*/
+    /*maxBytes: 50*1024*1024,*/
+    dirname: sails.config.appPath + '/assets/images/',
   };
+
 };
 exports.imageUploadConfig = imageUploadConfig;
 exports.deleteImagesLocal = async (imageList, path) => {
@@ -127,18 +83,6 @@ exports.deleteImagesLocal = async (imageList, path) => {
   });
 };
 
-exports.deleteImageS3 = async (imageName, path) => {
-  const skipper = require('skipper-s3')({key: s3Config.key, secret: s3Config.secret, bucket: s3Config.bucket});
-  return new Promise((resolve, reject) => {
-    skipper.rm(imageName, (err, result) => {
-      if (err) {
-        reject(err);
-      }
-      resolve(result);
-    });
-  });
-};
-
 exports.uploadImages = (imageFile) => {
   return new Promise((resolve, reject) => {
     imageFile.upload(imageUploadConfig(), async (err, uploaded) => {
@@ -150,66 +94,6 @@ exports.uploadImages = (imageFile) => {
       }
     });
   });
-};
-
-/*cloudinary.config({
-  cloud_name: 'dqrtwfvnt',
-  api_key: '165687553246611',
-  api_secret: 'dgJHV3ws5P5X6MB3Q02chnDM4do'
-});
-
-exports.uploadImages = (imageFile) => {
-  console.log('image->', imageFile);
-  cloudinary.uploader
-    .upload(imageFile, {folder: 'images'})
-    .then(result => console.log('results', result));
-};*/
-
-exports.uploadImagesWithConfig = (imageFile, customConfig) => {
-  let config = imageUploadConfig();
-  config = {
-    ...config,
-    ...customConfig
-  };
-  return new Promise((resolve, reject) => {
-    imageFile.upload(config, async (err, uploaded) => {
-      if (err) {
-        console.log(err);
-        reject(err);
-      } else {
-        resolve(uploaded);
-      }
-    });
-  });
-};
-exports.comparePasswords = (passwordProvided, userPassword) => {
-  return new Promise((resolve, reject) => {
-    User.comparePassword(passwordProvided, userPassword, (err, valid) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(valid);
-      }
-    });
-  });
-};
-exports.getGlobalConfig = async () => {
-  let globalConfigs = await GlobalConfigs.findOne({
-    deletedAt: null
-  });
-
-  if (!globalConfigs) {
-    throw new Error('Global config was not found!');
-  }
-
-  return globalConfigs;
-};
-
-exports.getAuthUser = (req) => {
-  if (!_.isUndefined(req.token) && !_.isUndefined(req.token.userInfo)) {
-    return req.token.userInfo;
-  }
-  throw new Error('Auth user was not found.');
 };
 
 exports.getContentTypeByFile = function (fileName) {
@@ -241,32 +125,4 @@ exports.makeUniqueId = function (length) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
   return result;
-};
-
-
-/*exports.calculateCourierCharge = async function (freeShipping, allProducts, zilaId) {
-  let courierCharge = 0;
-  let maxDhakaDeliveryCharge = 0;
-  let maxOutsideDhakaDeliveryCharge = 0;
-
-  let globalConfigs = await GlobalConfigs.findOne({
-    deletedAt: null
-  });
-
-  allProducts.forEach(product => {
-
-    let dhakaCharge = (_.isNull(product.dhaka_charge) || _.isUndefined(product.dhaka_charge)) ? globalConfigs.dhaka_charge : product.dhaka_charge;
-    let outsideDhakaCharge = (_.isNull(product.outside_dhaka_charge) || _.isUndefined(product.outside_dhaka_charge)) ? globalConfigs.outside_dhaka_charge : product.outside_dhaka_charge;
-
-    maxDhakaDeliveryCharge = Math.max(maxDhakaDeliveryCharge, dhakaCharge);
-    maxOutsideDhakaDeliveryCharge = Math.max(maxOutsideDhakaDeliveryCharge, outsideDhakaCharge);
-  });
-  if (!freeShipping) {
-    if (zilaId === dhakaZilaId) {
-      courierCharge = maxDhakaDeliveryCharge;
-    } else {
-      courierCharge = maxOutsideDhakaDeliveryCharge;
-    }
-  }
-  return courierCharge;
-};*/
+}

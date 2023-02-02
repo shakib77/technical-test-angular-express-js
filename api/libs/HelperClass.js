@@ -1,5 +1,3 @@
-const { asyncForEach } = require('./helper');
-const fs = require('fs');
 
 exports.Helper = {
 /*  deleteImages: async (imageList, path) => {

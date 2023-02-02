@@ -52,13 +52,7 @@ module.exports.datastores = {
      *                                                                          *
      ***************************************************************************/
     adapter: require('sails-mysql'),
-    // url: 'mysql://root@localhost:3306/square_denim',
-
-    host: 'localhost',
-    port: 3306,
-    user: 'squser',
-    password: 'SQDB2022',
-    database: 'square_denim_db'
+    url: 'mysql://root@localhost:3306/angular_express',
   },
   cache: {
     adapter: 'sails-redis',
