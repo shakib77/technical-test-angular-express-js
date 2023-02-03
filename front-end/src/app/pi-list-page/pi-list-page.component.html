@@ -52,16 +52,9 @@
         <td style="text-align: center">{{data.city}}</td>
         <td style="text-align: center">{{skillsFormat(data.skills)}}</td>
         <td style="text-align: center"><a href="{{resumeLink(data.resume)}}">Download resume</a></td>
-        <td style="text-align: center">{{data.dob}}</td>
+        <td style="text-align: center">{{dateFormat(data.dob)}}</td>
         <td style="text-align: center">
-          <!--<button
-                  [routerLink]="['/edit', data.id]"
-                  nz-button [nzSize]="'default'">
-            <i class="anticon anticon-edit"></i>
-          </button>-->
-
           <ng-container>
-
             <button
               nz-popconfirm=""
               nzPopconfirmTitle="Are you sure?"

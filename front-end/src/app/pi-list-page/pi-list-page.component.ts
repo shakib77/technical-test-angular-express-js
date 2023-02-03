@@ -71,7 +71,11 @@ export class PiListPageComponent implements OnInit {
 
   resumeLink(link: string) {
     return typeof link !== null ? `${this.FILE_ENDPOINT + link}` : '/'
+  }
 
+  dateFormat (dates: string) {
+    const date = new Date(dates);
+    return date.toLocaleDateString()
   }
 
 }
