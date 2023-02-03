@@ -1,8 +1,8 @@
 {
-  "name": "softbd-ecommerce-api",
+  "name": "technical-test",
   "private": true,
   "version": "0.0.1",
-  "description": "An e-commerce api",
+  "description": "A technical test",
   "keywords": [],
   "dependencies": {
     "@sailshq/connect-redis": "^3.2.1",
@@ -14,7 +14,6 @@
     "bcryptjs": "^2.4.3",
     "bluebird": "^3.7.2",
     "crypto-js": "^4.0.0",
-    "excel4node": "^1.7.2",
     "flaverr": "^1.10.0",
     "formidable": "^1.2.2",
     "grunt": "1.0.4",

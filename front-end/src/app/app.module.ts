@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { PiCreateComponent } from './pi-create/pi-create.component';
-import { PiListPageComponent } from './pi-list-page/pi-list-page.component';
+import {AppRoutingModule} from './app-routing.module';
+import {PiCreateComponent} from './pi-create/pi-create.component';
+import {PiListPageComponent} from './pi-list-page/pi-list-page.component';
 import {AppComponent} from "./home/app.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NzSelectModule} from "ng-zorro-antd/select";
@@ -13,6 +13,10 @@ import {NzFormModule} from "ng-zorro-antd/form";
 import {NzCardModule} from "ng-zorro-antd/card";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {NzCheckboxModule} from "ng-zorro-antd/checkbox";
+import {HttpClientModule} from "@angular/common/http";
+import {NzButtonModule} from "ng-zorro-antd/button";
+import {NzDatePickerModule} from "ng-zorro-antd/date-picker";
+import {NzNotificationModule} from 'ng-zorro-antd/notification';
 
 @NgModule({
   declarations: [
@@ -34,11 +38,13 @@ import {NzCheckboxModule} from "ng-zorro-antd/checkbox";
     AppRoutingModule,
     NzCheckboxModule,
     FormsModule,
-    // PrebootModule.withConfig({appRoot: 'app-root'}),
-    // BrowserTransferStateModule,
-    // NgZorroAntdModule,
+    HttpClientModule,
+    NzButtonModule,
+    NzDatePickerModule,
+    NzNotificationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

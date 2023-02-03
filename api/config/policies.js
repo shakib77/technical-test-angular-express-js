@@ -22,4 +22,7 @@ module.exports.policies = {
   CityController: {
     '*': true,
   },
+  PersonalInfoController: {
+    '*': true,
+  },
 };

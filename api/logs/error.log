@@ -1,0 +1,30 @@
+{
+  message: "Request Uri: /api/v1/country ########## AdapterError: Unexpected error from database adapter: ER_NO_SUCH_TABLE: Table 'angular_express.country' doesn't exist",
+  level: 'error',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-02 22:37:27'
+}
+{
+  message: "Request Uri: /api/v1/country ########## AdapterError: Unexpected error from database adapter: ER_NO_SUCH_TABLE: Table 'angular_express.country' doesn't exist",
+  level: 'error',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-02 22:37:32'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-02 23:04:57'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-02 23:19:30'
+}
