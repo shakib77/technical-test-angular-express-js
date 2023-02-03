@@ -1,5 +1,5 @@
 <section>
-  <nz-card class="card-height" nzTitle="Concept List" [nzExtra]="extraTemplate">
+  <nz-card class="card-height" nzTitle="Personal Info List" [nzExtra]="extraTemplate">
     <ng-template #extraTemplate>
       <button routerLink="/create"
               nz-button [nzType]="'primary'">
@@ -50,8 +50,8 @@
         <td style="text-align: center">{{data.name}}</td>
         <td style="text-align: center">{{data.country}}</td>
         <td style="text-align: center">{{data.city}}</td>
-        <td style="text-align: center">{{data.skills}}</td>
-        <td style="text-align: center">{{data.resume}}</td>
+        <td style="text-align: center">{{skillsFormat(data.skills)}}</td>
+        <td style="text-align: center"><a href="{{resumeLink(data.resume)}}">Download resume</a></td>
         <td style="text-align: center">{{data.dob}}</td>
         <td style="text-align: center">
           <!--<button

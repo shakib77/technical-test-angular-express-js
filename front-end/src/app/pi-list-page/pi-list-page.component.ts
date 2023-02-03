@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {PersonalInfoService} from "../personal-info.service";
+import {NzNotificationService} from "ng-zorro-antd/notification";
 
 @Component({
   selector: 'app-pi-list-page',
@@ -7,6 +8,8 @@ import {PersonalInfoService} from "../personal-info.service";
   styleUrls: ['./pi-list-page.component.css']
 })
 export class PiListPageComponent implements OnInit {
+
+  private FILE_ENDPOINT = 'http://localhost:1339/api/v1/all-images?image_path=';
 
   data: any;
   _isSpinning = true;
@@ -18,7 +21,8 @@ export class PiListPageComponent implements OnInit {
   isLoading: boolean = false;
 
   constructor(
-    private personalInfoService: PersonalInfoService
+    private personalInfoService: PersonalInfoService,
+    private _notification: NzNotificationService,
   ) {
   }
 
@@ -53,10 +57,20 @@ export class PiListPageComponent implements OnInit {
   }
 
   deleteConfirm(id: number) {
-    /*this.conceptService.delete(id).subscribe(result => {
-      this._notification.create('warning', 'Delete', 'Product concept has been removed successfully');
+    this.personalInfoService.delete(id).subscribe(result => {
+      this._notification.create('warning', 'Delete', 'Personal Info has been removed successfully');
       this.getPageData();
-    });*/
+    });
+  }
+
+  skillsFormat(skills: string) {
+    const arr = JSON.parse(skills)
+    return arr.map((obj: any) => obj.label).join(', ')
+
+  }
+
+  resumeLink(link: string) {
+    return typeof link !== null ? `${this.FILE_ENDPOINT + link}` : '/'
 
   }
 

@@ -17,7 +17,7 @@ module.exports = {
     try {
       if (typeof req.query.image_path !== 'undefined') {
 
-        const imagePath = `assets/images/${req.query.image_path}`;
+        const imagePath = `assets/resumes${req.query.image_path}`;
 
         console.log('imagepath->', imagePath);
 

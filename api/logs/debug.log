@@ -640,3 +640,930 @@
   label: 'Personal info log!',
   timestamp: '2023-02-03 18:24:12'
 }
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '               .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '   Sails              <|    .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '   v1.5.3              |\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '                      /|.\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '                     / || \\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: "                   ,'  |'  \\",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: "                .-'.-==|/_--'",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: "                `--'-------' ",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '   __---___--___---___--___---___--___',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: ' ____---___--___---___--___---___--___-__',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: 'Server lifted in `E:\\my-project\\test\\technical-test-angular-express-js\\api`',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: 'To shut down Sails, press <CTRL> + C at any time.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: 'Read more at \x1B[4mhttps://sailsjs.com/support\x1B[24m.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '\x1B[90m:: Fri Feb 03 2023 19:42:49 GMT+0600 (Bangladesh Standard Time)\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: 'Environment : development',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: 'Port        : 1339',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:13:29'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:14:46'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:14:47'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:15:23'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:17:24'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:17:25'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:17:34'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:18:09'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:18:14'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: '               .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: '   Sails              <|    .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: '   v1.5.3              |\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: '                      /|.\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: '                     / || \\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: "                   ,'  |'  \\",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: "                .-'.-==|/_--'",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: "                `--'-------' ",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: '   __---___--___---___--___---___--___',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: ' ____---___--___---___--___---___--___-__',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: 'Server lifted in `E:\\my-project\\test\\technical-test-angular-express-js\\api`',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: 'To shut down Sails, press <CTRL> + C at any time.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: 'Read more at \x1B[4mhttps://sailsjs.com/support\x1B[24m.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: '\x1B[90m:: Fri Feb 03 2023 22:49:01 GMT+0600 (Bangladesh Standard Time)\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: 'Environment : development',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: 'Port        : 1339',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:49:01'
+}
+{
+  message: 'Request Uri: /api/v1/personal-info/delete/1 ########## ReferenceError: time2 is not defined',
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:51:06'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: '               .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: '   Sails              <|    .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: '   v1.5.3              |\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: '                      /|.\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: '                     / || \\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: "                   ,'  |'  \\",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: "                .-'.-==|/_--'",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: "                `--'-------' ",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: '   __---___--___---___--___---___--___',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: ' ____---___--___---___--___---___--___-__',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: 'Server lifted in `E:\\my-project\\test\\technical-test-angular-express-js\\api`',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: 'To shut down Sails, press <CTRL> + C at any time.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: 'Read more at \x1B[4mhttps://sailsjs.com/support\x1B[24m.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: '\x1B[90m:: Fri Feb 03 2023 22:52:28 GMT+0600 (Bangladesh Standard Time)\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: 'Environment : development',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: 'Port        : 1339',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:52:28'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: '               .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: '   Sails              <|    .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: '   v1.5.3              |\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: '                      /|.\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: '                     / || \\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: "                   ,'  |'  \\",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: "                .-'.-==|/_--'",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: "                `--'-------' ",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: '   __---___--___---___--___---___--___',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: ' ____---___--___---___--___---___--___-__',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: 'Server lifted in `E:\\my-project\\test\\technical-test-angular-express-js\\api`',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: 'To shut down Sails, press <CTRL> + C at any time.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: 'Read more at \x1B[4mhttps://sailsjs.com/support\x1B[24m.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: '\x1B[90m:: Fri Feb 03 2023 23:05:54 GMT+0600 (Bangladesh Standard Time)\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: 'Environment : development',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: 'Port        : 1339',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:05:54'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: '               .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: '   Sails              <|    .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: '   v1.5.3              |\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: '                      /|.\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: '                     / || \\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: "                   ,'  |'  \\",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: "                .-'.-==|/_--'",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: "                `--'-------' ",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: '   __---___--___---___--___---___--___',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: ' ____---___--___---___--___---___--___-__',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: 'Server lifted in `E:\\my-project\\test\\technical-test-angular-express-js\\api`',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: 'To shut down Sails, press <CTRL> + C at any time.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: 'Read more at \x1B[4mhttps://sailsjs.com/support\x1B[24m.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: '\x1B[90m:: Fri Feb 03 2023 23:33:19 GMT+0600 (Bangladesh Standard Time)\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: 'Environment : development',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: 'Port        : 1339',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 23:33:19'
+}
+{
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\my-project\\test\\technical-test-angular-express-js\\api\\assets\\images\\821c5dc0-a51f-4539-9a0a-8bf3a00cf666.pdf',
+  level: 'error',
+  message: 'RequestUrl: /api/v1/all-images ###### Sending 500 ("Server Error") response: \n' +
+    " ENOENT: no such file or directory, open 'E:\\my-project\\test\\technical-test-angular-express-js\\api\\assets\\images\\821c5dc0-a51f-4539-9a0a-8bf3a00cf666.pdf'",
+  stack: "Error: ENOENT: no such file or directory, open 'E:\\my-project\\test\\technical-test-angular-express-js\\api\\assets\\images\\821c5dc0-a51f-4539-9a0a-8bf3a00cf666.pdf'",
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: '***********************************************************************************',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: '`res.jsonx()` is deprecated in Sails v1.0 and will be removed in a future release.',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: "\x1B[1mAny files in `api/responses/` that haven't been customized can simply be removed.\x1B[22m",
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: '\x1B[90mOtherwise see http://sailsjs.com/upgrading for options to replace `res.jsonx()`.\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: '\x1B[90m(jsonx was called from `serverError`)\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: '***********************************************************************************',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: '***********************************************************************************',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: '`res.jsonx()` is deprecated in Sails v1.0 and will be removed in a future release.',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: "\x1B[1mAny files in `api/responses/` that haven't been customized can simply be removed.\x1B[22m",
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: '\x1B[90mOtherwise see http://sailsjs.com/upgrading for options to replace `res.jsonx()`.\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: '\x1B[90m(jsonx was called from `notFound`)\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: '***********************************************************************************',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: '               .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: '   Sails              <|    .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: '   v1.5.3              |\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: '                      /|.\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: '                     / || \\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: "                   ,'  |'  \\",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: "                .-'.-==|/_--'",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: "                `--'-------' ",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: '   __---___--___---___--___---___--___',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: ' ____---___--___---___--___---___--___-__',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: 'Server lifted in `E:\\my-project\\test\\technical-test-angular-express-js\\api`',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: 'To shut down Sails, press <CTRL> + C at any time.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: 'Read more at \x1B[4mhttps://sailsjs.com/support\x1B[24m.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: '\x1B[90m:: Sat Feb 04 2023 00:23:21 GMT+0600 (Bangladesh Standard Time)\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: 'Environment : development',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: 'Port        : 1339',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:23:21'
+}

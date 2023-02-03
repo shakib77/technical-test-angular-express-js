@@ -35,6 +35,7 @@ export class PiCreateComponent implements OnInit {
     private personalInfoService: PersonalInfoService,
     private i18n: NzI18nService,
     private router: Router,
+
   ) {
     this.validateForm = this.fb.group({
       name: ['', [Validators.required]],
@@ -84,7 +85,7 @@ export class PiCreateComponent implements OnInit {
             'New Concept has been successfully created.',
             result.name
           );
-          this.router.navigate(['/details/', result.id]).then(r => r);
+          this.router.navigate(['/list']);
         }
       },
       error: (e) => {
@@ -131,23 +132,11 @@ export class PiCreateComponent implements OnInit {
 
   cityChange($event: string) {
     const query = encodeURI($event);
-    /*if (query !== 'null') {
-      this.categoryProductService
-        .getSubcategoryByCategoryId(query)
-        .subscribe(result => {
-          this.subcategorySearchOptions = result;
-        });
-    } else {
-      this.subcategorySearchOptions = {};
-    }*/
   }
 
   onCheckboxChange(e: any, value: any) {
-    // console.log('e=>', e?.target?.value);
-    console.log('es=>', value);
     const checkArray: FormArray = this.validateForm.get('skills') as FormArray;
     if (!!value) {
-      // checkArray.push(this.fb.control('', [Validators.required, Validators.minLength(1)]));
       checkArray.push(new FormControl(value));
     } else {
       let i: number = 0;
@@ -157,6 +146,19 @@ export class PiCreateComponent implements OnInit {
           return;
         }
         i++;
+      });
+    }
+  }
+
+  get file(){
+    return this.validateForm.controls;
+  }
+
+  onFileChange(event:any) {
+    if (event.target.files.length > 0) {
+      const file = event.target.files[0];
+      this.validateForm.patchValue({
+        resume: file
       });
     }
   }

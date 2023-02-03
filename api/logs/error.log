@@ -28,3 +28,102 @@
   label: 'Anonderbazar log!',
   timestamp: '2023-02-02 23:19:30'
 }
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:13:29'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:14:46'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:14:47'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:15:23'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:17:24'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:17:25'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:17:34'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:18:09'
+}
+{
+  message: 'Request Uri: /api/v1/cities/NaN ########## UsageError: Invalid criteria.\n' +
+    'Details:\n' +
+    '  Could not use the provided `where` clause.  Could not filter by `country_id`: Does not match the declared data type of the corresponding attribute.  1 error validating value: \n' +
+    " • Specified value (a string: 'NaN') doesn't match the expected type: 'number'\n",
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 20:18:14'
+}
+{
+  message: 'Request Uri: /api/v1/personal-info/delete/1 ########## ReferenceError: time2 is not defined',
+  level: 'error',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 22:51:06'
+}
+{
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\my-project\\test\\technical-test-angular-express-js\\api\\assets\\images\\821c5dc0-a51f-4539-9a0a-8bf3a00cf666.pdf',
+  level: 'error',
+  message: 'RequestUrl: /api/v1/all-images ###### Sending 500 ("Server Error") response: \n' +
+    " ENOENT: no such file or directory, open 'E:\\my-project\\test\\technical-test-angular-express-js\\api\\assets\\images\\821c5dc0-a51f-4539-9a0a-8bf3a00cf666.pdf'",
+  stack: "Error: ENOENT: no such file or directory, open 'E:\\my-project\\test\\technical-test-angular-express-js\\api\\assets\\images\\821c5dc0-a51f-4539-9a0a-8bf3a00cf666.pdf'",
+  label: 'Personal info log!',
+  timestamp: '2023-02-04 00:21:40'
+}

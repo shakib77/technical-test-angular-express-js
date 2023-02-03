@@ -5,23 +5,33 @@
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
 
-const {performance} = require("perf_hooks");
-const moment = require("moment");
+const {uploadFile} = require("../../libs/helper");
+
 module.exports = {
   create: async (req, res) => {
-    console.log('create contact ->', req.body);
-    // moment
+    // console.log('create contact ->', req.body);
     if (!req.body) {
       return res.badRequest('Invalid data Provided');
     }
 
     try {
-      // const personalInfo = await PersonalInfo.create(req.body).fetch();
+      try {
+        const uploaded = await uploadFile(req.file('resume'));
+        if (uploaded.length === 0) {
+          return res.badRequest('No file was uploaded');
+        }
+        const newPath = uploaded[0].fd.split(/[\\//]+/).reverse()[0];
+        req.body.resume = '/' + newPath;
+      } catch (err) {
+        console.log('image error', err);
+        return res.json(err.status, {err: err});
+      }
 
+      const personalInfo = await PersonalInfo.create(req.body).fetch();
       return res.json({
         success: true,
         message: 'successfully submitted personal info',
-        data: []
+        data: personalInfo
       });
 
     } catch (error) {
@@ -38,7 +48,7 @@ module.exports = {
     try {
       const personalInfo = await PersonalInfo.find({deletedAt: null})
 
-      console.log('personalInfo->', personalInfo);
+      // console.log('personalInfo->', personalInfo);
 
       return res.status(200).json({
         status: true,
@@ -61,7 +71,7 @@ module.exports = {
 
       const personalInfo = await PersonalInfo.findOne({id: req.param('id'), deletedAt: null})
 
-      console.log('country->', personalInfo);
+      // console.log('country->', personalInfo);
 
       return res.status(200).json({
         status: true,
@@ -81,10 +91,7 @@ module.exports = {
 
   delete: async (req, res) => {
     try {
-
       await PersonalInfo.updateOne({id: req.param('id')}).set({deletedAt: new Date()});
-
-      sails.log.debug(`Request Uri: ${req.path}  ##########  Time Elapsed: ${(time2 - time1) / 1000} seconds`);
 
       return res.json({
         success: true,
