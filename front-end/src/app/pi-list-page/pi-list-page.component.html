@@ -1,1 +1,82 @@
-<p>pi-list-page works!</p>
+<section>
+  <nz-card class="card-height" nzTitle="Concept List" [nzExtra]="extraTemplate">
+    <ng-template #extraTemplate>
+      <button routerLink="/create"
+              nz-button [nzType]="'primary'">
+        <i class="anticon anticon-download"></i>
+        <span> Add New </span>
+      </button>&nbsp;
+    </ng-template>
+    <nz-table #nzTable
+              nzShowQuickJumper
+              nzShowSizeChanger
+              [nzFrontPagination]="false"
+              [nzData]="data"
+              [nzLoading]="_isSpinning"
+              [(nzPageSize)]="limit"
+              (nzPageIndexChange)="getPageData($event)"
+              [nzBordered]="true"
+    >
+
+      <thead>
+      <tr>
+        <th [nzWidth]="'250px'" style="text-align: center">
+          <span> Name </span>
+        </th>
+        <th style="text-align: center">
+          <span> Country </span>
+        </th>
+        <th style="text-align: center">
+          <span> City </span>
+        </th>
+        <th style="text-align: center">
+          <span> Language Skills </span>
+        </th>
+        <th style="text-align: center">
+          <span> Resume </span>
+        </th>
+        <th style="text-align: center">
+          <span> Date of birth </span>
+        </th>
+
+        <th style="text-align: center">
+          <span>Actions</span>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let data of nzTable.data">
+
+        <td style="text-align: center">{{data.name}}</td>
+        <td style="text-align: center">{{data.country}}</td>
+        <td style="text-align: center">{{data.city}}</td>
+        <td style="text-align: center">{{data.skills}}</td>
+        <td style="text-align: center">{{data.resume}}</td>
+        <td style="text-align: center">{{data.dob}}</td>
+        <td style="text-align: center">
+          <!--<button
+                  [routerLink]="['/edit', data.id]"
+                  nz-button [nzSize]="'default'">
+            <i class="anticon anticon-edit"></i>
+          </button>-->
+
+          <ng-container>
+
+            <button
+              nz-popconfirm=""
+              nzPopconfirmTitle="Are you sure?"
+              nzOkText="ok"
+              nzCancelText="cancel"
+              (nzOnConfirm)="deleteConfirm(data.id)"
+              nz-button
+              nzType="primary"
+            >
+              delete
+            </button>
+          </ng-container>
+        </td>
+      </tr>
+      </tbody>
+    </nz-table>
+  </nz-card>
+</section>

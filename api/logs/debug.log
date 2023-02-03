@@ -442,3 +442,201 @@
   label: 'Anonderbazar log!',
   timestamp: '2023-02-03 12:18:28'
 }
+{
+  message: '***********************************************************************************',
+  level: 'debug',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-03 18:22:22'
+}
+{
+  message: '`res.jsonx()` is deprecated in Sails v1.0 and will be removed in a future release.',
+  level: 'debug',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-03 18:22:22'
+}
+{
+  message: "\x1B[1mAny files in `api/responses/` that haven't been customized can simply be removed.\x1B[22m",
+  level: 'debug',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-03 18:22:22'
+}
+{
+  message: '\x1B[90mOtherwise see http://sailsjs.com/upgrading for options to replace `res.jsonx()`.\x1B[39m',
+  level: 'debug',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-03 18:22:22'
+}
+{
+  message: '\x1B[90m(jsonx was called from `notFound`)\x1B[39m',
+  level: 'debug',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-03 18:22:22'
+}
+{
+  message: '***********************************************************************************',
+  level: 'debug',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-03 18:22:22'
+}
+{
+  message: '***********************************************************************************',
+  level: 'debug',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-03 18:22:44'
+}
+{
+  message: '`res.jsonx()` is deprecated in Sails v1.0 and will be removed in a future release.',
+  level: 'debug',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-03 18:22:44'
+}
+{
+  message: "\x1B[1mAny files in `api/responses/` that haven't been customized can simply be removed.\x1B[22m",
+  level: 'debug',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-03 18:22:44'
+}
+{
+  message: '\x1B[90mOtherwise see http://sailsjs.com/upgrading for options to replace `res.jsonx()`.\x1B[39m',
+  level: 'debug',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-03 18:22:44'
+}
+{
+  message: '\x1B[90m(jsonx was called from `notFound`)\x1B[39m',
+  level: 'debug',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-03 18:22:44'
+}
+{
+  message: '***********************************************************************************',
+  level: 'debug',
+  label: 'Anonderbazar log!',
+  timestamp: '2023-02-03 18:22:44'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '               .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '   Sails              <|    .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '   v1.5.3              |\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '                      /|.\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '                     / || \\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: "                   ,'  |'  \\",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: "                .-'.-==|/_--'",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: "                `--'-------' ",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '   __---___--___---___--___---___--___',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: ' ____---___--___---___--___---___--___-__',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: 'Server lifted in `E:\\my-project\\test\\technical-test-angular-express-js\\api`',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: 'To shut down Sails, press <CTRL> + C at any time.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: 'Read more at \x1B[4mhttps://sailsjs.com/support\x1B[24m.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '\x1B[90m:: Fri Feb 03 2023 18:24:12 GMT+0600 (Bangladesh Standard Time)\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: 'Environment : development',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: 'Port        : 1339',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '\x1B[90m-------------------------------------------------------\x1B[39m',
+  level: 'debug',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}

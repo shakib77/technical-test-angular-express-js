@@ -10,12 +10,12 @@
  * https://sailsjs.com/docs/concepts/logging
  */
 let {transports, createLogger, format} = require('winston');
-let { combine, timestamp, label, prettyPrint } = format;
+let {combine, timestamp, label, prettyPrint} = format;
 
 let commonSettings = {
   colorize: false,
   format: combine(
-    label({ label: `Anonderbazar log!` }),
+    label({label: `Personal info log!`}),
     timestamp({
       format: 'YYYY-MM-DD HH:mm:ss'
     }),
@@ -62,16 +62,16 @@ let logger = {
 module.exports.log = {
 
   /***************************************************************************
-  *                                                                          *
-  * Valid `level` configs: i.e. the minimum log level to capture with        *
-  * sails.log.*()                                                            *
-  *                                                                          *
-  * The order of precedence for log levels from lowest to highest is:        *
-  * silly, verbose, info, debug, warn, error                                 *
-  *                                                                          *
-  * You may also set the level to "silent" to suppress all logs.             *
-  *                                                                          *
-  ***************************************************************************/
+   *                                                                          *
+   * Valid `level` configs: i.e. the minimum log level to capture with        *
+   * sails.log.*()                                                            *
+   *                                                                          *
+   * The order of precedence for log levels from lowest to highest is:        *
+   * silly, verbose, info, debug, warn, error                                 *
+   *                                                                          *
+   * You may also set the level to "silent" to suppress all logs.             *
+   *                                                                          *
+   ***************************************************************************/
   custom: logger,
   inspect: false
 

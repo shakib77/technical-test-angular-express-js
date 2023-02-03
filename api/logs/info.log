@@ -316,3 +316,195 @@
   label: 'Anonderbazar log!',
   timestamp: '2023-02-03 12:18:28'
 }
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '               .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '   Sails              <|    .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '   v1.5.3              |\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '                      /|.\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '                     / || \\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: "                   ,'  |'  \\",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: "                .-'.-==|/_--'",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: "                `--'-------' ",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '   __---___--___---___--___---___--___',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: ' ____---___--___---___--___---___--___-__',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: 'Server lifted in `E:\\my-project\\test\\technical-test-angular-express-js\\api`',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: 'To shut down Sails, press <CTRL> + C at any time.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: 'Read more at \x1B[4mhttps://sailsjs.com/support\x1B[24m.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 18:24:12'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '               .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '   Sails              <|    .-..-.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '   v1.5.3              |\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '                      /|.\\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '                     / || \\',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: "                   ,'  |'  \\",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: "                .-'.-==|/_--'",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: "                `--'-------' ",
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '   __---___--___---___--___---___--___',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: ' ____---___--___---___--___---___--___-__',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: '',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: 'Server lifted in `E:\\my-project\\test\\technical-test-angular-express-js\\api`',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: 'To shut down Sails, press <CTRL> + C at any time.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}
+{
+  message: 'Read more at \x1B[4mhttps://sailsjs.com/support\x1B[24m.',
+  level: 'info',
+  label: 'Personal info log!',
+  timestamp: '2023-02-03 19:42:49'
+}

@@ -21,9 +21,11 @@ export class PiCreateComponent implements OnInit {
   city: any;
 
   skills: any[] = [
-    {label: 'Apple', value: 'Apple', checked: true},
-    {label: 'Pear', value: 'Pear'},
-    {label: 'Orange', value: 'Orange'}
+    {id: 1, label: 'C#'},
+    {id: 2, label: 'C++'},
+    {id: 3, label: 'Java'},
+    {id: 4, label: 'PHP'},
+    {id: 5, label: 'SQL'}
   ]
 
 
@@ -38,9 +40,10 @@ export class PiCreateComponent implements OnInit {
       name: ['', [Validators.required]],
       country: ['', [Validators.required]],
       city: ['', [Validators.required]],
-      skills: this.fb.array([]),
+      skills: this.fb.array([], [Validators.required, Validators.minLength(1)]),
       dob: ['', [Validators.required]],
       resume: [null, []],
+      // resume1: checkArray.push(this.fb.control('', [Validators.required, Validators.minLength(1)]));
     });
 
   }
@@ -81,10 +84,10 @@ export class PiCreateComponent implements OnInit {
             'New Concept has been successfully created.',
             result.name
           );
-          this.router.navigate(['/dashboard/concepts/details/', result.id]).then(r => r);
+          this.router.navigate(['/details/', result.id]).then(r => r);
         }
       },
-      error: (e) =>{
+      error: (e) => {
         this.isSubmit = false;
         this._notification.create(
           'error',
@@ -112,12 +115,12 @@ export class PiCreateComponent implements OnInit {
   }
 
   onCountryChange($event: string) {
-    const countyId = encodeURI($event);
+    const countyId = Number(encodeURI($event));
     this.cities = [];
     this.city = 0;
     if (!!countyId) {
       this.personalInfoService
-        .getAllCity(Number(countyId))
+        .getAllCity(countyId)
         .subscribe((result: any) => {
           this.cities = result.data;
         });
@@ -139,16 +142,17 @@ export class PiCreateComponent implements OnInit {
     }*/
   }
 
-  onCheckboxChange(e: any) {
-    console.log('e=>', e?.target?.value);
+  onCheckboxChange(e: any, value: any) {
+    // console.log('e=>', e?.target?.value);
+    console.log('es=>', value);
     const checkArray: FormArray = this.validateForm.get('skills') as FormArray;
-    if (e.target && e.target.checked) {
+    if (!!value) {
       // checkArray.push(this.fb.control('', [Validators.required, Validators.minLength(1)]));
-      checkArray.push(new FormControl(e.target.value));
+      checkArray.push(new FormControl(value));
     } else {
       let i: number = 0;
       checkArray.controls.forEach((item: any) => {
-        if (item.value == e.target.value) {
+        if (item.value.id == value.id) {
           checkArray.removeAt(i);
           return;
         }

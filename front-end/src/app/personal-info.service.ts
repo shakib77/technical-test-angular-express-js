@@ -25,4 +25,8 @@ export class PersonalInfoService {
   create(data: any): Observable<any> {
     return this.http.post(this.EndPoint + '/personal-info/create', data);
   }
+
+  getAllPersonalInfo(limit: number, skip: number): Observable<any> {
+    return this.http.get(`${this.EndPoint}/personal-info?limit=${limit}&skip=${skip}`);
+  }
 }

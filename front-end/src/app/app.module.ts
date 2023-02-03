@@ -17,6 +17,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {NzButtonModule} from "ng-zorro-antd/button";
 import {NzDatePickerModule} from "ng-zorro-antd/date-picker";
 import {NzNotificationModule} from 'ng-zorro-antd/notification';
+import {NzPopconfirmModule} from "ng-zorro-antd/popconfirm";
+import {NzTableModule} from "ng-zorro-antd/table";
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import {NzNotificationModule} from 'ng-zorro-antd/notification';
     HttpClientModule,
     NzButtonModule,
     NzDatePickerModule,
-    NzNotificationModule
+    NzNotificationModule,
+    NzPopconfirmModule,
+    NzTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

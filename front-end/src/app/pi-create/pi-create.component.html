@@ -71,8 +71,8 @@
             <div nz-col [nzSpan]="12" style="display: flex; justify-content: space-between">
               <div *ngFor="let skill of skills; let i=index">
                 <label>
-                  <input type="checkbox" [value]="skill.value" (change)="onCheckboxChange($event)"/>
-                  {{skill.value}}
+                  <input type="checkbox" [value]="skill" (change)="onCheckboxChange($event, skill)"/>
+                  {{skill.label}}
                 </label>
               </div>
               <div *ngIf="getFormControl('skills').dirty && getFormControl('skills').hasError('required')">
@@ -87,8 +87,7 @@
               <label> Date of birth </label>
             </div>
             <div nz-col [nzSpan]="12">
-              <nz-date-picker formControlName="dob" [nzSize]="'large'"
-                              style="width: 100%" [nzPlaceHolder]="'Input date of birth'"></nz-date-picker>
+              <input formControlName="dob" type="date">
               <div *ngIf="getFormControl('dob').dirty&&getFormControl('dob').hasError('required')">
                 required!
               </div>
